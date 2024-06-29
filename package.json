@@ -1,0 +1,23 @@
+{
+  "name": "finalproject_storytime",
+  "version": "0.0.1",
+  "description": "ACA Final Project: Generative AI for bedtime stories for kids.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ktemplin/StoryTime.git"
+  },
+  "author": "Kris Templin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ktemplin/StoryTime/issues"
+  },
+  "homepage": "https://github.com/ktemplin/StoryTime#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "firebase": "^10.11.1"
+  }
+}

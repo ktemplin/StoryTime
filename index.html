@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bedtime Story Generator</title>
+</head>
+<body>
+    <h1>Bedtime Story Generator</h1>
+    <form action="/generate_story" method="post">
+        <label for="who">Who is the story about?</label>
+        <input type="text" id="who" name="who" required>
+        <label for="where">Where does this story take place?</label>
+        <input type="text" id="where" name="where" required>
+        <button type="submit">Generate Story</button>
+    </form>
+    <div id="story">
+        {{ story | safe }}
+    </div>
+    <script src="main.js" async defer></script>
+</body>
+</html>
