@@ -6,8 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Set your OpenAI API key
-const OPENAI_API_KEY = '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';
-
+const OPENAI_API_KEY = ''
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
